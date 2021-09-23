@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background: linear-gradient(to right, #5d4157, #a8caba);
+    font-size: large;
+    font-family: 'Gluten', cursive;
+}
+
+#question {
+    border: 10px solid;
+    margin: auto;
+}
+
+#cents {
+    border: 10px solid;
+    margin:auto;
+    
+}

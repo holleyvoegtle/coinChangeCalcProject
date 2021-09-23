@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+
+    </style>
   </head>
   <body>
     <!-- Write your markup here -->
+    <div id="question">
+      <h1>Change Calculator</h1>
+        <label class="howmuchdue" for="amount-due">How much is due for the sale?</label>
+        <input class="cashoutput" id="amount-due" type="text" />
+        <label class="howmuchgiven" for="amount-received">How much has the customer given you?</label>
+        <input class="cashoutput" id="amount-received" type="text"/>
+        <br><br>
+        <button id="calculate-change">Calculate</button>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="dollar">
+      <br>
+      <br>
+      
+      <label class="name">Twenty Dollars:</label>
+        <p class="output" id="twenty-output"></p>
+      <label class="name">Ten Dollars:</label>
+        <p class="output" id="ten-output"></p>
+      <label class="name">Five Dollars:</label>
+        <p class="output" id="five-output"></p>
+      <label class="name">Dollars:</label>
+        <p class="output" id="dollars-output"></p>
+        <br>
+        
+        
+        
+    </div>
+
+    <div id="cents">
+        
+        <br>
+        <br>
+      <label class="name">Quarters:</label>
+        <p class="output" id="quarters-output"></p>
+      <label class="name">Dimes:</label>
+        <p class="output" id="dimes-output"></p>
+      <label class="name">Nickels:</label>
+        <p class="output" id="nickels-output"></p>
+      <label class="name">Pennies:</label>
+        <p class="output" id="pennies-output"></p>
+    </div>
+
+    
 
     <!-- Don't forget to add your <script> tag here -->
+    <script src = "main.js" charset = "utf-8"></script>
 
   </body>
 </html>
