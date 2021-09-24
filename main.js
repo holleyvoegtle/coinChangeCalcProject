@@ -2,7 +2,7 @@
 
 // start with defining money function; use document to access id
 var money = function(id) {
-    return document.getElementById(id);
+    return document.querySelector(`#${id}`);
     };
 
 // define amount within money function; this is where the calulation is defined
@@ -24,19 +24,19 @@ var money = function(id) {
         money("five-output").innerHTML = Math.floor(cents/500);
         cents = cents % 500;
         
+        
         money("dollars-output").innerHTML = Math.floor(cents/100);
         cents = cents % 100;
-        
         money("quarters-output").innerHTML = Math.floor(cents/25);
-        cents = cents % 25;
+        cents = (cents % 25).toFixed(2);
         
         money("dimes-output").innerHTML = Math.floor(cents/10);
-        cents = cents % 10;
+        cents = (cents % 10).toFixed(2);
         
         money("nickels-output").innerHTML = Math.floor(cents/5);
+        cents = (cents % 5).toFixed(2);
+        money("pennies-output").innerHTML = Math.floor(cents/1);
         
-        money("pennies-output").innerHTML = Math.ceil(cents % 5);
     }
-
 // click button
     document.getElementById('calculate-change').addEventListener('click', Calculate);
